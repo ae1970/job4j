@@ -5,8 +5,7 @@ package ru.job4j.calculate;
 * @author Eugeny Anufriev (aeugeniy@gmail.com)
 * since 29.06.2018 
 */
-public class Calculate
-{
+public class Calculate {
 /**
 * Method main.
 * @param args - args.
