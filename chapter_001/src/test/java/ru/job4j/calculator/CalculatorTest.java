@@ -12,7 +12,7 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
+    @Test
     public void whenSubtract2On1Then1() {
         Calculator calc = new Calculator();
         calc.subtact(2D, 1D);
