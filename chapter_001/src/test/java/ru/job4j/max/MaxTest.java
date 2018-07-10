@@ -14,5 +14,9 @@ public class MaxTest {
         Max maxim = new Max();
         int result = maxim.max(1, 2);
         assertThat(result, is(2));
+
+
+        int result2 = maxim.max(1, 2, 3);
+        assertThat(result2, is(3));
     }
 }
