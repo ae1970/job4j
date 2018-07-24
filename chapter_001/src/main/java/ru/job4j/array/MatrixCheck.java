@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 public class MatrixCheck {
+
     public boolean mono(boolean[][] data) {
         boolean result = true;
         boolean flag1 = data[0][0];
