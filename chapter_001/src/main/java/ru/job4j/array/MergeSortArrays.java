@@ -9,10 +9,18 @@ public class MergeSortArrays {
          * @param2 b Второй отсортированный массив
          * @return Возвращает общий массив в отсортированном виде
          */
-        int array[]=new int[a.length + b.length];
-        System.arraycopy(a,0, array, 0, a.length);
-        System.arraycopy(b,0, array, a.length, b.length);
-        Arrays.sort(array);
+        int[] array = new int[a.length + b.length];
+        int i = 0, j = 0, k = 0;
+
+        while (i < a.length && j < b.length)
+            array[k++] = a[i] < b[j] ? a[i++] :  b[j++];
+
+        while (i < a.length)
+            array[k++] = a[i++];
+
+
+        while (j < b.length)
+            array[k++] = b[j++];
 
         return array;
     }
